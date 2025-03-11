@@ -1,0 +1,14 @@
+services:
+  server:
+    build: .
+    environment:
+      DRONE_INFISICAL_DRONE_BIND:
+      DRONE_INFISICAL_DEBUG:
+      DRONE_INFISICAL_DRONE_SECRET:
+      DRONE_INFISICAL_URL:
+      DRONE_INFISICAL_CLIENT_ID:
+      DRONE_INFISICAL_CLIENT_SECRET:
+      DRONE_INFISICAL_PROJECT_ID:
+    ports:
+      - "3000:3000"
+
